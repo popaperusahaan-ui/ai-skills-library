@@ -1,0 +1,39 @@
+---
+name: debugging
+description: Identifies errors, analyzes root causes, troubleshoots issues, and provides reliable software fixes.
+---
+
+# Debugging Skill
+
+## Purpose
+Find and resolve software errors efficiently.
+
+## Instructions
+- Analyze error messages and logs.
+- Identify possible root causes.
+- Examine relevant code.
+- Propose reliable solutions.
+- Explain the changes clearly.
+
+## Workflow
+1. Understand the reported problem.
+2. Examine the error and relevant code.
+3. Identify the root cause.
+4. Develop a suitable fix.
+5. Verify the proposed solution.
+6. Explain the results.
+
+## Rules
+- Do not guess without evidence.
+- Do not hide or ignore errors.
+- Preserve existing functionality.
+- Avoid unnecessary code changes.
+- Protect sensitive information.
+
+## Output
+Provide:
+- Problem Summary
+- Root Cause
+- Recommended Fix
+- Corrected Code
+- Verification Results
