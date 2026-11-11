@@ -1,51 +1,76 @@
+
 # AI Skills Catalog
 
-This catalog lists the available Skills in AI Skills Library.
+This catalog lists the Skills currently available in AI Skills Library.
 
-## Software Development
+**Current collection:** 34 Skill files.
 
-| Skill | Description | Location |
-|---|---|---|
-| Code Review | Reviews source code and identifies potential issues. | [code-review](../skills/code-review/SKILL.md) |
-| Debugging | Identifies errors and investigates root causes. | [debugging](../skills/debugging/SKILL.md) |
-| Coding | Generates and improves source code. | [coding](../skills/coding/SKILL.md) |
+## AI and Intelligent Systems
 
-## Software Architecture
+| Skill | Location |
+|---|---|
+| AI Agent Development | [ai-agent-development](../skills/ai-agent-development/SKILL.md) |
+| AI Development | [ai-development](../skills/ai-development/SKILL.md) |
+| Machine Learning | [machine-learning](../skills/machine-learning/SKILL.md) |
 
-| Skill | Description | Location |
-|---|---|---|
-| Architecture | Designs modular and maintainable software systems. | [architecture](../skills/architecture/SKILL.md) |
+## Application and Software Development
 
-## Security
+| Skill | Location |
+|---|---|
+| Backend Development | [backend-development](../skills/backend-development/SKILL.md) |
+| Frontend Development | [frontend-development](../skills/frontend-development/SKILL.md) |
+| Mobile Development | [mobile-development](../skills/mobile-development/SKILL.md) |
+| Coding | [coding](../skills/coding/SKILL.md) |
+| Code Refactoring | [code-refactoring](../skills/code-refactoring/SKILL.md) |
+| API Development | [api-development](../skills/api-development/SKILL.md) |
+| API Testing | [api-testing](../skills/api-testing/SKILL.md) |
+| Database Development | [database-development](../skills/database-development/SKILL.md) |
+| Data Engineering | [data-engineering](../skills/data-engineering/SKILL.md) |
+| Data Science | [data-science](../skills/data-science/SKILL.md) |
 
-| Skill | Description | Location |
-|---|---|---|
-| Security | Identifies vulnerabilities and improves security practices. | [security](../skills/security/SKILL.md) |
+## Architecture, Infrastructure, and Operations
 
-## Quality Assurance
+| Skill | Location |
+|---|---|
+| Architecture | [architecture](../skills/architecture/SKILL.md) |
+| Architecture Review | [architecture-review](../skills/architecture-review/SKILL.md) |
+| Cloud Engineering | [cloud-engineering](../skills/cloud-engineering/SKILL.md) |
+| DevOps Engineering | [devops-engineering](../skills/devops-engineering/SKILL.md) |
+| Automation Engineering | [automation-engineering](../skills/automation-engineering/SKILL.md) |
+| Performance Optimization | [performance-optimization](../skills/performance-optimization/SKILL.md) |
 
-| Skill | Description | Location |
-|---|---|---|
-| Testing | Designs and evaluates software tests. | [testing](../skills/testing/SKILL.md) |
+## Security and Identity
 
-## Research and Analysis
+| Skill | Location |
+|---|---|
+| Application Security | [application-security](../skills/application-security/SKILL.md) |
+| Cybersecurity | [cybersecurity](../skills/cybersecurity/SKILL.md) |
+| Authentication and Authorization | [authentication-authorization](../skills/authentication-authorization/SKILL.md) |
+| Identity and Access Management | [identity-access-management](../skills/identity-access-management/SKILL.md) |
+| Network Security | [network-security](../skills/network-security/SKILL.md) |
+| Penetration Testing | [penetration-testing](../skills/penetration-testing/SKILL.md) |
+| Secure Coding | [secure-coding](../skills/secure-coding/SKILL.md) |
+| Security | [security](../skills/security/SKILL.md) |
 
-| Skill | Description | Location |
-|---|---|---|
-| Research | Conducts structured research and evaluates sources. | [research](../skills/research/SKILL.md) |
+## Quality, Research, and Productivity
+
+| Skill | Location |
+|---|---|
+| Code Review | [code-review](../skills/code-review/SKILL.md) |
+| Testing | [testing](../skills/testing/SKILL.md) |
+| Research | [research](../skills/research/SKILL.md) |
+| Productivity | [productivity](../skills/productivity/SKILL.md) |
 
 ## Writing and Documentation
 
-| Skill | Description | Location |
-|---|---|---|
-| Writing | Creates clear and professional content. | [writing](../skills/writing/SKILL.md) |
-
-## Productivity
-
-| Skill | Description | Location |
-|---|---|---|
-| Productivity | Organizes tasks and improves workflows. | [productivity](../skills/productivity/SKILL.md) |
+| Skill | Location |
+|---|---|
+| Documentation Engineering | [documentation-engineering](../skills/documentation-engineering/SKILL.md) |
+| Technical Writing | [technical-writing](../skills/technical-writing/SKILL.md) |
+| Writing | [writing](../skills/writing/SKILL.md) |
 
 ## Adding New Skills
 
 Every new Skill should be added to this catalog after it has been reviewed and accepted.
+
+Keep this catalog synchronized with the actual `skills/` directory.
