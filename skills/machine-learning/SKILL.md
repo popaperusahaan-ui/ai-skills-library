@@ -1,115 +1,192 @@
+
 ---
-name: ai-development
-description: AI development skill for designing, building, integrating, evaluating, and maintaining artificial intelligence applications.
+name: machine-learning
+description: Machine learning skill for designing, developing, training, evaluating, optimizing, and deploying machine learning models and systems.
 ---
 
-# AI Development Skill
+# Machine Learning Skill
 
 ## Purpose
 
-Help AI assistants develop reliable, useful, and maintainable AI-powered applications.
+Help AI assistants design, build, train, evaluate, optimize, and deploy reliable machine learning models and systems.
 
 ## Instructions
 
-When developing AI applications:
+When working on machine learning tasks:
 
-1. Understand the problem and requirements.
-2. Identify suitable AI approaches.
-3. Evaluate available models and providers.
-4. Design the AI system architecture.
-5. Integrate models and APIs.
-6. Prepare data responsibly.
-7. Implement prompt and response handling.
-8. Evaluate output quality.
-9. Apply security and privacy controls.
-10. Monitor and improve the system.
+1. Understand the problem and expected outcomes.
+2. Identify the machine learning task type.
+3. Collect and inspect relevant datasets.
+4. Prepare and preprocess data.
+5. Select suitable algorithms and models.
+6. Design a reproducible training workflow.
+7. Train models using appropriate methods.
+8. Evaluate model performance using relevant metrics.
+9. Optimize models when necessary.
+10. Deploy and monitor trained models.
+11. Document experiments and results.
 
 ## Workflow
 
-### 1. Requirements Analysis
+### 1. Problem Definition
 
 Identify:
-- Application purpose.
-- Target users.
-- Required AI capabilities.
-- Data sources.
-- Performance requirements.
-- Budget constraints.
-- Privacy requirements.
+- Business or research objectives.
+- Target variables.
+- Input features.
+- Expected predictions.
+- Machine learning task type.
+- Technical constraints.
+- Success criteria.
 
-### 2. Model Selection
+### 2. Data Collection and Exploration
 
 Evaluate:
-- Model capabilities.
+- Data sources.
+- Dataset size.
+- Data quality.
+- Missing values.
+- Duplicate records.
+- Class distribution.
+- Data relevance.
+- Potential data leakage.
+
+Use authorized and appropriate datasets.
+
+### 3. Data Preparation
+
+Perform suitable operations:
+- Data cleaning.
+- Missing-value handling.
+- Feature selection.
+- Feature engineering.
+- Encoding categorical variables.
+- Feature scaling.
+- Dataset splitting.
+
+Prevent data leakage by fitting preprocessing steps only on training data.
+
+### 4. Model Selection
+
+Choose appropriate approaches based on the problem:
+
+- Supervised learning.
+- Unsupervised learning.
+- Semi-supervised learning.
+- Reinforcement learning.
+
+Consider algorithms such as:
+- Linear Regression.
+- Logistic Regression.
+- Decision Trees.
+- Random Forest.
+- Gradient Boosting.
+- Support Vector Machines.
+- K-Nearest Neighbors.
+- Naive Bayes.
+- K-Means Clustering.
+- Neural Networks.
+
+Evaluate model complexity, interpretability, computational requirements, and suitability.
+
+### 5. Model Training
+
+Establish:
+- Training configuration.
+- Hyperparameters.
+- Validation strategy.
+- Reproducible random seeds.
+- Experiment tracking.
+- Baseline models.
+
+Train models using appropriate datasets and computational resources.
+
+### 6. Model Evaluation
+
+Use suitable evaluation metrics.
+
+For classification:
 - Accuracy.
-- Latency.
-- Context limits.
-- Hosting requirements.
-- Licensing.
-- Operating costs.
+- Precision.
+- Recall.
+- F1-score.
+- Confusion Matrix.
+- ROC-AUC when appropriate.
 
-### 3. Architecture Design
+For regression:
+- MAE.
+- MSE.
+- RMSE.
+- R-squared.
 
-Define:
-- Model integration.
-- Backend services.
-- Data flow.
-- Prompt management.
-- Retrieval systems when needed.
-- Logging and monitoring.
+For clustering:
+- Silhouette Score.
+- Davies-Bouldin Index.
+- Cluster interpretation.
 
-### 4. Implementation
+Evaluate generalization and check for overfitting and underfitting.
 
-Build modular AI components with clear interfaces and appropriate error handling.
+### 7. Model Optimization
 
-### 5. Evaluation
+Improve models through:
+- Hyperparameter tuning.
+- Feature engineering.
+- Regularization.
+- Cross-validation.
+- Model comparison.
+- Appropriate optimization techniques.
 
-Assess:
-- Response quality.
-- Accuracy.
-- Consistency.
-- Latency.
-- Resource consumption.
-- Failure cases.
+Avoid optimizing solely for a single metric when other requirements matter.
 
-### 6. Security and Privacy
+### 8. Deployment
 
-Consider:
+Prepare models for practical use through:
+- Model serialization.
+- API integration.
+- Inference pipelines.
 - Input validation.
-- Data minimization.
-- Access controls.
-- Secure API key storage.
-- Protection against prompt injection.
-- Responsible data handling.
+- Version management.
+- Deployment testing.
+- Rollback planning.
 
-### 7. Monitoring and Improvement
+Select deployment infrastructure based on performance, reliability, and cost requirements.
 
-Track:
+### 9. Monitoring and Maintenance
+
+Monitor:
+- Prediction quality.
 - Model performance.
-- Error rates.
-- Usage.
-- Costs.
-- User feedback.
+- Data drift.
+- Concept drift.
+- Inference latency.
+- Resource consumption.
+- Operational failures.
 
-Use evaluation results to guide improvements.
+Retrain or update models when evidence shows that improvements are necessary.
 
 ## Rules
 
-- Do not invent model capabilities.
-- Verify model and license requirements.
-- Never expose API keys or private data.
-- Do not send sensitive data to external services without authorization.
-- Clearly communicate AI limitations.
-- Do not claim evaluations were performed unless they were completed.
-- Keep human oversight for important decisions.
+- Never fabricate datasets, experiments, or evaluation results.
+- Do not assume that high training accuracy means good generalization.
+- Prevent data leakage.
+- Use appropriate evaluation metrics.
+- Keep experiments reproducible.
+- Respect dataset licenses and privacy requirements.
+- Protect sensitive training data.
+- Document model limitations and assumptions.
+- Consider fairness and potential bias.
+- Do not deploy models without appropriate testing.
+- Explain uncertainty and limitations clearly.
 
 ## Output
 
 Provide:
 
-1. AI system architecture.
-2. Model selection rationale.
-3. Integration plan.
-4. Implementation code.
-5. Evaluation strategy.
-6. Security and privacy recommendations.
+1. Problem definition and machine learning approach.
+2. Dataset requirements and preparation strategy.
+3. Algorithm and model selection rationale.
+4. Training implementation.
+5. Evaluation metrics and results.
+6. Optimization recommendations.
+7. Deployment strategy.
+8. Monitoring and maintenance plan.
