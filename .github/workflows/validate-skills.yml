@@ -1,3 +1,4 @@
+
 name: Validate Skills
 
 on:
@@ -6,6 +7,9 @@ on:
       - main
     paths:
       - "skills/**"
+      - "scripts/validate_skills.py"
+      - "templates/skill-template/**"
+      - "docs/skill-format.md"
       - ".github/workflows/validate-skills.yml"
 
   pull_request:
@@ -13,12 +17,19 @@ on:
       - main
     paths:
       - "skills/**"
+      - "scripts/validate_skills.py"
+      - "templates/skill-template/**"
+      - "docs/skill-format.md"
       - ".github/workflows/validate-skills.yml"
 
   workflow_dispatch:
 
 permissions:
   contents: read
+
+concurrency:
+  group: validate-skills-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   validate:
@@ -34,54 +45,9 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Check Python Version
+        run: python --version
+
       - name: Validate Skill Files
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import sys
-
-          skill_files = list(Path("skills").glob("*/SKILL.md"))
-
-          if not skill_files:
-              print("No SKILL.md files found.")
-              sys.exit(1)
-
-          required_sections = [
-              "## Purpose",
-              "## Instructions",
-              "## Workflow",
-              "## Rules",
-              "## Output",
-          ]
-
-          errors = []
-
-          for file in skill_files:
-              content = file.read_text(encoding="utf-8")
-
-              if not content.startswith("---\n"):
-                  errors.append(f"{file}: Missing YAML frontmatter.")
-                  continue
-
-              if content.count("---") < 2:
-                  errors.append(f"{file}: Incomplete YAML frontmatter.")
-                  continue
-
-              frontmatter = content.split("---", 2)[1]
-
-              if "name:" not in frontmatter:
-                  errors.append(f"{file}: Missing name metadata.")
-
-              if "description:" not in frontmatter:
-                  errors.append(f"{file}: Missing description metadata.")
-
-              for section in required_sections:
-                  if section not in content:
-                      errors.append(f"{file}: Missing {section} section.")
-
-          if errors:
-              print("\n".join(errors))
-              sys.exit(1)
-
-          print(f"Successfully validated {len(skill_files)} skill files.")
-          PY
+        run: python scripts/validate_skills.py
+        
